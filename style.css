@@ -1,0 +1,38 @@
+.calculator{
+    margin-left: 250px;
+    border: 1px solid black;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(33, 32, 32);
+}
+.ipt {
+    
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 90%;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+ 
+.firstLine{
+    display: flex;
+    justify-content: center;
+} 
+
+.secondLine{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+ 
+.btn {
+    border-radius: 15px;
+    background-color: #ccc;
+    margin-left: 8px;
+    padding: 11px 15px;
+}

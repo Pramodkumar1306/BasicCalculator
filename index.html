@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "calculator">
+        <input class= 'ipt'type="text" readonly>
+        <div class="firstLine">
+            <button class = 'btn' onclick="addingToInputClear()">C</button>
+            <button class = 'btn' onclick="addingToInputDivide()">()</button>
+            <button class = 'btn' onclick="addingToInputPercent()">%</button>
+            <button class = 'btn' onclick="addingToInputDivide()">/</button>
+        </div>
+        <div class="secondLine">
+            <button class = 'btn' onclick = "addingToInputSeven()">7</button>
+            <button class = 'btn' onclick = "addingToInputEight()">8</button>
+            <button class = 'btn' onclick = "addingToInputNine()">9</button>
+            <button class = 'btn' onclick = "addingToInputMultiply()">*</button>
+        </div>
+        <div class="secondLine">
+            <button class = 'btn' onclick="addingToInputFour()">4</button>
+            <button class = 'btn' onclick="addingToInputFive()">5</button>
+            <button class = 'btn' onclick="addingToInputSix()">6</button>
+            <button class = 'btn' onclick="addingToInputMinus()">-</button>
+        </div>
+        <div class="secondLine">
+            <button class = 'btn' onclick="addingToInputOne()">1</button>
+            <button class = 'btn' onclick="addingToInputTwo()">2</button>
+            <button class = 'btn' onclick="addingToInputTree()">3</button>
+            <button class = 'btn' onclick="addingToInputPlus()">+</button>
+        </div>
+        <div class="secondLine">
+            <button class = 'btn'>+/-</button>
+            <button class = 'btn' onclick="addingToInputZero()">0</button>
+            <button class = 'btn' onclick="addingToInputDot()">.</button>
+            <button class = 'btn' onclick="addingToInputEqual()">=</button>
+        </div>
+    </div>
+
+    <script>
+        let currentValue = ' ';
+        document.querySelector('.ipt').value = currentValue;
+
+        function addingToInputOne( ) {
+            currentValue += '1';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputTwo(value) {
+            currentValue += '2';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputTree(value) {
+            currentValue += '3';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputFour(value) {
+            currentValue += '4';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputFive(value) {
+            currentValue += '5';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputSix(value) {
+            currentValue += '6';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputSeven(value) {
+            currentValue += '7';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputEight(value) {
+            currentValue += '8';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputNine(value) {
+            currentValue += '9';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputZero(value) {
+            currentValue += '0';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputPlus(value) {
+            currentValue += '+';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputMinus(value) {
+            currentValue += '-';
+            document.querySelector('.ipt').value = currentValue;
+        }
+
+        function addingToInputMultiply(value) {
+            currentValue += '*';
+            document.querySelector('.ipt').value = currentValue;
+        }
+
+        function addingToInputDivide(value) {
+            currentValue += '/';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputPercent(value) {
+            currentValue += '%';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputDot(value) {
+            currentValue += '.';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputBracket(value) {
+            currentValue += '(';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputBracketClose(value) {
+            currentValue += ')';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputClear(value) {
+            currentValue = ' ';
+            document.querySelector('.ipt').value = currentValue;
+        }
+        function addingToInputEqual(value) {
+            currentValue = eval(currentValue);
+            document.querySelector('.ipt').value = currentValue;
+        }
+    </script>
+</body>
+</html>
